@@ -1,0 +1,19 @@
+version: "2.2"
+
+services:
+
+    streamlit_app:
+#        image: 40bed1f8a6cf
+        build:
+            .
+        expose:
+            - 8501
+
+    nginx_server:
+        image: nginx
+        depends_on:
+            - streamlit_app
+        volumes:
+            - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+        ports:
+            - 8080:8080
