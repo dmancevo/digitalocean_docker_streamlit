@@ -1,0 +1,8 @@
+name: digitalocean_docker_streamlit
+services:
+- dockerfile_path: Dockerfile
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: dmancevo/digitalocean_docker_streamlit
+  name: digitalocean_docker_streamlit

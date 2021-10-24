@@ -1,4 +1,4 @@
-FROM python
+FROM python:3.9.7-bullseye
 
 WORKDIR app/
 

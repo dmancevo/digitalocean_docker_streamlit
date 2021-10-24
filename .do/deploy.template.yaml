@@ -1,0 +1,8 @@
+spec:
+  name: digitalocean_docker_streamlit
+  services:
+  - dockerfile_path: Dockerfile
+    git:
+      branch: main
+      repo_clone_url: https://github.com/dmancevo/digitalocean_docker_streamlit.git
+    name: digitalocean_docker_streamlit
