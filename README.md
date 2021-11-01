@@ -2,7 +2,7 @@
 
 Simple docker streamlit template app to be run on [DigitalOcean](https://m.do.co/c/a42cc842048c) app platform.
 
-try:
+To run locally, try:
 ```
 docker build . -t streamlit_app
 docker run -p 8501:8501 streamlit_app
